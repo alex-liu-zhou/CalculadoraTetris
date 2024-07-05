@@ -1,0 +1,460 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculadora TETRIS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="./js/Utils/utils.js"></script>
+    <script
+      type="text/javascript"
+      src="./js/calculator.js"
+      charset="UTF-8"
+    ></script>
+    <script></script>
+  </head>
+  <body>
+    <div class="container-fluid principal d-flex justify-content-center">
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <div class="container-xxl container">
+            <div class="row">
+              <div class="col-1 bloqueGris bloqueBorde"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-1 bloqueGris bloqueBorde"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-3 bloqueInvisible"></div>
+              <div class="col-4 bloqueInvisible"></div>
+              <div class="col-3 bloqueInvisible"></div>
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-3 bloqueInvisible"></div>
+              <div class="col-4 bloqueInvisible"></div>
+              <div class="col-3 bloqueInvisible"></div>
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-3 bloqueInvisible"></div>
+              <div class="col-4 bloqueInvisible"></div>
+              <div class="col-3 bloqueInvisible"></div>
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-3 bloqueInvisible"></div>
+              <div class="col-4 bloqueInvisible"></div>
+              <div class="col-3 bloqueInvisible"></div>
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-3 bloqueInvisible"></div>
+              <div class="col-4 bloqueInvisible"></div>
+              <div class="col-3 bloqueInvisible"></div>
+              <div class="col-1 bloqueGris"></div>
+
+              <!-- empieza la calculadora -->
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-3"></div>
+              <div class="col-4 larga animacionResultado bloque2">
+                <input disabled class="texto-input" type="text" id="screen" />
+              </div>
+              <div class="col-3"></div>
+              <div class="col-1 bloqueGris"></div>
+              <!-- Parte 1 row -->
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-3"></div>
+              <div class="col-1 L-naranja animacionNaranja2 bloque">
+                <input
+                  class="texto-boton letra-naranja"
+                  type="button"
+                  value="1"
+                  onclick="addElement('1')"
+                />
+              </div>
+              <div class="col-1 L-naranja animacionNaranja2 bloque">
+                <input
+                  class="texto-boton letra-naranja"
+                  type="button"
+                  value="2"
+                  onclick="addElement('2')"
+                />
+              </div>
+              <div class="col-1 L-naranja animacionNaranja2 bloque">
+                <input
+                  class="texto-boton letra-naranja"
+                  type="button"
+                  value="3"
+                  onclick="addElement('3')"
+                />
+              </div>
+              <div class="col-1 larga animacionAqua bloque">
+                <input
+                  class="texto-boton letra-aqua"
+                  type="button"
+                  value="+"
+                  onclick="addElement('+')"
+                />
+              </div>
+              <div class="col-3"></div>
+              <div class="col-1 bloqueGris"></div>
+              <!-- Segunda Row -->
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-3"></div>
+              <div class="col-1 L-naranja animacionNaranja2 bloque">
+                <input
+                  class="texto-boton letra-naranja"
+                  type="button"
+                  value="4"
+                  onclick="addElement('4')"
+                />
+              </div>
+              <div class="col-1 L-naranja animacionNaranja1 bloque">
+                <input
+                  class="texto-boton letra-naranja"
+                  type="button"
+                  value="5"
+                  onclick="addElement('5')"
+                />
+              </div>
+              <div class="col-1 L-naranja animacionNaranja1 bloque">
+                <input
+                  class="texto-boton letra-naranja"
+                  type="button"
+                  value="6"
+                  onclick="addElement('6')"
+                />
+              </div>
+
+              <div class="col-1 larga animacionAqua bloque">
+                <input
+                  class="texto-boton letra-aqua"
+                  type="button"
+                  value="-"
+                  onclick="addElement('-')"
+                />
+              </div>
+              <div class="col-3"></div>
+              <div class="col-1 bloqueGris"></div>
+              <!-- tercer row -->
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-3"></div>
+              <div class="col-1 bloqueAmarillo bloque animacionAmarillo">
+                <input
+                  class="texto-boton letra-amarilla"
+                  type="button"
+                  value="7"
+                  onclick="addElement('7')"
+                />
+              </div>
+              <div class="col-1 bloqueAmarillo bloque animacionAmarillo">
+                <input
+                  class="texto-boton letra-amarilla"
+                  type="button"
+                  value="8"
+                  onclick="addElement('8')"
+                />
+              </div>
+              <div class="col-1 L-naranja animacionNaranja1 bloque">
+                <input
+                  class="texto-boton letra-naranja"
+                  type="button"
+                  value="9"
+                  onclick="addElement('9')"
+                />
+              </div>
+              <div class="col-1 larga animacionAqua bloque">
+                <input
+                  class="texto-boton letra-aqua"
+                  type="button"
+                  value="X"
+                  onclick="addElement('X')"
+                />
+              </div>
+              <div class="col-1 bloqueAzul bloqueAzulMovil"></div>
+              <div class="col-1"></div>
+              <div class="col-1"></div>
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-3"></div>
+              <div class="col-1 bloqueAmarillo bloque animacionAmarillo">
+                <audio id="Sounds" src="./style/Sounds/NextLevel.mp3"></audio>
+                <input
+                  class="texto-boton letra-amarilla"
+                  type="button"
+                  value="="
+                  onclick="calculate()"
+                />
+              </div>
+              <div class="col-1 bloqueAmarillo bloque animacionAmarillo">
+                <input
+                  class="texto-boton letra-amarilla"
+                  type="button"
+                  value="0"
+                  onclick="addElement('0')"
+                />
+              </div>
+              <div class="col-1 L-naranja animacionNaranja1 bloque">
+                <input
+                  class="texto-boton letra-naranja"
+                  type="button"
+                  value="C"
+                  onclick="clearScreen()"
+                />
+              </div>
+              <div class="col-1 larga animacionAqua bloque">
+                <input
+                  class="texto-boton letra-aqua"
+                  type="button"
+                  value="/"
+                  onclick="addElement('/')"
+                />
+              </div>
+              <div class="col-1 bloqueAzul bloqueAzulMovil"></div>
+              <div class="col-1 bloqueAzul bloqueAzulMovil"></div>
+              <div class="col-1 bloqueAzul bloqueAzulMovil"></div>
+              <!-- linea inferior -->
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-1 bloqueGris bloqueBorde"></div>
+              <div class="col-1"></div>
+              <div class="col-1 bloqueVerde animacionVerde"></div>
+              <div class="col-1 bloqueVerde animacionVerde"></div>
+              <div class="col-1 bloqueAzul"></div>
+              <div class="col-1 bloqueMorado"></div>
+              <div class="col-1 bloqueMorado"></div>
+              <div class="col-1 bloqueMorado"></div>
+              <div class="col-1 bloqueRojo animacionRojo"></div>
+              <div class="col-1 bloqueRojo animacionRojo"></div>
+              <div class="col-1"></div>
+              <!-- linea linferios -->
+              <!-- linea inferior -->
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-1 bloqueGris bloqueBorde"></div>
+              <div class="col-1 bloqueVerde animacionVerde"></div>
+              <div class="col-1 bloqueVerde animacionVerde"></div>
+              <div class="col-1"></div>
+              <div class="col-1 bloqueAzul"></div>
+              <div class="col-1"></div>
+              <div class="col-1 bloqueMorado"></div>
+              <div class="col-1 bloqueAmarillo"></div>
+              <div class="col-1 bloqueAmarillo"></div>
+              <div class="col-1 bloqueRojo animacionRojo"></div>
+              <div class="col-1 bloqueRojo animacionRojo"></div>
+              <!-- linea linferios -->
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-1 bloqueGris bloqueBorde"></div>
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-1 bloqueGris"></div>
+              <div class="col-1 bloqueGris"></div>
+            </div>
+          </div>
+          <!-- hasta aqui -->
+        </div>
+        <!-- hasta aqui -->
+        <div class="col-3 pt-5">
+          <div
+            class="contenedorLateral d-flex align-items-center justify-content-center position-relative"
+          >
+            <div class="container-fluid text-center position-relative">
+              <div class="div next pb-3 pt-0">NEXT</div>
+              <div class="div next pb-3 pt-0 next-sombra">NEXT</div>
+              <div class="row justify-content-center">
+                <div class="col-1 lateral-transparente"></div>
+                <div class="col-1 lateral-transparente"></div>
+                <div class="col-1 m"></div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-1 m"></div>
+                <div class="col-1 m"></div>
+                <div class="col-1 m"></div>
+              </div>
+            </div>
+
+            <div
+              class="container-fluid text-center position-absolute bloqueVerdeLateral"
+            >
+              <div class="div next pb-3 pt-0">NEXT</div>
+              <div class="div next pb-3 pt-0 next-sombra">NEXT</div>
+              <div class="row justify-content-center">
+                <div class="col-1 lateral-transparente"></div>
+                <div class="col-1 lateralVerde"></div>
+                <div class="col-1 lateralVerde"></div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-1 lateralVerde"></div>
+                <div class="col-1 lateralVerde"></div>
+                <div class="col-1 lateral-transparente"></div>
+              </div>
+            </div>
+            <!--  -->
+            <div
+              class="container-fluid text-center position-absolute bloqueVerdeLateral"
+            >
+              <div class="div next pb-3 pt-0">NEXT</div>
+              <div class="div next pb-3 pt-0 next-sombra">NEXT</div>
+              <div class="row justify-content-center">
+                <div class="col-1 lateralRojo"></div>
+                <div class="col-1 lateralRojo"></div>
+                <div class="col-1 lateral-transparente"></div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-1 lateral-transparente"></div>
+                <div class="col-1 lateralRojo"></div>
+                <div class="col-1 lateralRojo"></div>
+              </div>
+            </div>
+            <!--  -->
+            <div
+              class="container-fluid text-center position-absolute bloqueVerdeLateral"
+            >
+              <div class="div next pb-3 pt-0">NEXT</div>
+              <div class="div next pb-3 pt-0 next-sombra">NEXT</div>
+              <div class="row justify-content-center">
+                <div class="col-1 lateralAmarillo"></div>
+                <div class="col-1 lateralAmarillo"></div>
+                <div class="col-1 lateral-transparente"></div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-1 lateralAmarillo"></div>
+                <div class="col-1 lateralAmarillo"></div>
+                <div class="col-1 lateral-transparente"></div>
+              </div>
+            </div>
+            <!--  -->
+            <div
+              class="container-fluid text-center position-absolute bloqueVerdeLateral"
+            >
+              <div class="div next pb-3 pt-0">NEXT</div>
+              <div class="div next pb-3 pt-0 next-sombra">NEXT</div>
+              <div class="row justify-content-center">
+                <div class="col-1 lateral-transparente"></div>
+                <div class="col-1 lateral-transparente"></div>
+                <div class="col-1 lateralNaranja1"></div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-1 lateralNaranja1"></div>
+                <div class="col-1 lateralNaranja1"></div>
+                <div class="col-1 lateralNaranja1"></div>
+              </div>
+            </div>
+            <!--  -->
+            <div
+              class="container-fluid text-center position-absolute bloqueVerdeLateral"
+            >
+              <div class="div next pb-3 pt-0">NEXT</div>
+              <div class="div next pb-3 pt-0 next-sombra">NEXT</div>
+              <div class="row justify-content-center">
+                <div class="col-1 lateralAzul"></div>
+                <div class="col-1 lateral-transparente"></div>
+                <div class="col-1 lateral-transparente"></div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-1 lateralAzul"></div>
+                <div class="col-1 lateralAzul"></div>
+                <div class="col-1 lateralAzul"></div>
+              </div>
+            </div>
+            <!--  -->
+            <div
+              class="container-fluid text-center position-absolute bloqueVerdeLateral"
+            >
+              <div class="div next pb-3 pt-0">NEXT</div>
+              <div class="div next pb-3 pt-0 next-sombra">NEXT</div>
+              <div class="row justify-content-center">
+                <div class="col-1 lateral-transparente"></div>
+                <div class="col-1 lateral-transparente"></div>
+                <div class="col-1 lateral-transparente"></div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-1 lateraAqua"></div>
+                <div class="col-1 lateraAqua"></div>
+                <div class="col-1 lateraAqua"></div>
+                <div class="col-1 lateraAqua"></div>
+              </div>
+            </div>
+            <!--  -->
+            <div
+              class="container-fluid text-center position-absolute bloqueVerdeLateral"
+            >
+              <div class="div next pb-3 pt-0">NEXT</div>
+              <div class="div next pb-3 pt-0 next-sombra">NEXT</div>
+              <div class="row justify-content-center">
+                <div class="col-1 lateral-transparente"></div>
+                <div class="col-1 lateral-transparente"></div>
+                <div class="col-1 lateralNaranja2"></div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-1 lateralNaranja2"></div>
+                <div class="col-1 lateralNaranja2"></div>
+                <div class="col-1 lateralNaranja2"></div>
+              </div>
+            </div>
+            <!--  -->
+            <div
+              class="container-fluid text-center position-absolute bloqueVerdeLateral"
+            >
+              <div class="div next pb-3 pt-0">NEXT</div>
+              <div class="div next pb-3 pt-0 next-sombra">NEXT</div>
+              <div class="row justify-content-center">
+                <div class="col-1 lateral-transparente"></div>
+                <div class="col-1 lateral-transparente"></div>
+                <div class="col-1 lateral-transparente"></div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-1 lateraAqua2"></div>
+                <div class="col-1 lateraAqua2"></div>
+                <div class="col-1 lateraAqua2"></div>
+                <div class="col-1 lateraAqua2"></div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="contenedorLateral mt-5 d-flex align-items-center justify-content-center ajustesScore"
+          >
+            <div class="row lateralScore">
+              <div class="col-12 text-center py-1">TOP</div>
+              <div class="col-12 text-center py-1">999999</div>
+              <div class="col-12 text-center py-1">SCORE</div>
+              <div class="col-12 d-flex justify-content-center">
+                <audio
+                  src="./style/Sounds/Cancion de Tetris   Original.mp3"
+                  controls
+                ></audio>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
